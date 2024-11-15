@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="appliName">
+        <h1>RANDRIA'SLIBRARY</h1>
+    </div>
+    <div id="data">
+        <!-- Les livres s'afficheront ici -->
+    </div>
+
+    <div class="titre">
+
+        <h2>Ajouter un nouveau livre</h2>
+    </div>
+    <form id="createForm">
+        <input type="text" id="title" placeholder="Titre" required>
+        <input type="text" id="author" placeholder="Auteur" required>
+        <input type="text" id="isbn" placeholder="ISBN" required>
+        <input type="date" id="published_date" required>
+        <input type="number" id="pages" placeholder="Nombre de pages" required>
+        <input type="text" id="cover" placeholder="Couverture" required>
+        <input type="text" id="language" placeholder="Langue" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="js.js"></script>
+</body>
+</html>

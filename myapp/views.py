@@ -31,3 +31,10 @@ def book_detail(request, pk):
     elif request.method == 'DELETE':
         book.delete()  # Utiliser 'book.delete()' au lieu de 'Book.delete()'
         return Response(status=status.HTTP_204_NO_CONTENT)
+def books_page(request):
+    return render(request, 'books.html')    
+@api_view(['GET'])
+def get_books(request):
+    books = Book.objects.all()
+    serializer = BookSerializer(books, many=True)
+    return Response(serializer.data)
